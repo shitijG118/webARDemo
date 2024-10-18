@@ -1,0 +1,15 @@
+<!-- include A-Frame -->
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<!-- include AR.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>
+    <!-- Create a red opaque box -->
+    <a-box position="0 0.5 0" material="color: red; opacity: 1;"></a-box>
+
+    <!-- Define a camera which will move according to the marker position -->
+    <a-marker-camera preset="hiro"></a-marker-camera>
+  </a-scene>
+</body>
+
